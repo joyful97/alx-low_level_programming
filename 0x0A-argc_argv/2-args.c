@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include "main.h"
+#include <stdlib.h>
 /**
- * main - print all arguments separated bey the new line
- * @argc: argument count
+ * main - print all arguments of the program separated by new line.
+ * @argc: argument count or size of arguments.
  * @argv: argument vector
  *
- * Return : Always 0 success
+ * Return: always 0.
  */
 int main(int argc, char **argv)
 {
@@ -14,11 +14,8 @@ int main(int argc, char **argv)
 	while (number < argc)
 	{
 		printf("%s\n", *(argv + number));
-	        number++;
+		number++;
 		(*argv)++;
 	}
-
 	return (0);
-
-
 }
